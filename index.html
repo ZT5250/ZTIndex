@@ -29,8 +29,6 @@
 </head>
 
 <body>
-    <!-- 返回顶部按钮 -->
-    <a id="backToTop" onclick="backToIndex();"><i class="glyphicon glyphicon-chevron-up"></i></a>
     <div class="container-div" id="CONTACT">
         <img id="imgconcat" style="opacity:0;position:absolute;" src="../static/images/contact.png">
     </div>
@@ -52,17 +50,5 @@
             opacity: 1
         }, 1000);
     });
-
-    function backToIndex() {
-        $("#imgconcat").transition({
-            x:160,
-            opacity: 0
-        }, 1000);
-        $("#backToTop").transition({ opacity: 0,},1000);
-        setTimeout(function() {
-            window.location = "index.html"
-        }, 1000);
-
-    }
     </script>
 </html>
