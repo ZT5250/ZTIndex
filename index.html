@@ -117,7 +117,7 @@
 	          <span class="artical_pre_content">github pages 简介</span>
 	          <span class="artical_submittime">2016年11月26日 15:12 </span>
           </li>
-          <li class="mblog">第二篇博客</li>
+          <li class="mblog" id="jianshu">简书</li>
           <li class="mblog">第三篇博客</li>
           <li class="mblog">第四篇博客</li>
           <li class="mblog">第五篇博客</li>
@@ -136,6 +136,9 @@
   <script>
     $("#gotogithubpage").on("click",function(){
       window.location.href = "githubpage.html";
+    });
+    $("#jianshu").on("click",function(){
+    	window.open("http://www.jianshu.com");
     });
     $(window).on("scroll", function() {
         //console.log("浏览器高度：" + $(window).height() + ",浏览器宽度：" + $(window).width() + ",当前位置：" + $("body").scrollTop());
