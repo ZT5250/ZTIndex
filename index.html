@@ -140,13 +140,13 @@
     $(window).on("scroll", function() {
         //console.log("浏览器高度：" + $(window).height() + ",浏览器宽度：" + $(window).width() + ",当前位置：" + $("body").scrollTop());
         if ($("body").scrollTop() > 100) {
-        	$("#head-div").slideUp(function(){
+        	$("#head-div").slideUp(300,function(){
 			$("#sub-head-div").slideDown();
 		});
             	
             
         } else {
-        	$("#head-div").slideDown(function(){
+        	$("#head-div").slideDown(300,function(){
 		$("#sub-head-div").slideUp();
 		});
             	
