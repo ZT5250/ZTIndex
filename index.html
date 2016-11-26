@@ -12,6 +12,7 @@
       body,html{
         margin:0;
         padding:0;
+        font-family: "微软雅黑"
       }
       
       #container{
@@ -23,10 +24,33 @@
         height:100px;
         line-height:100px;
         vertical-align:middle;
-        text-align:center;
-        font-size:20px;
+        background-color:#0a9d64;
         color:#ffffff;
-        background-color:#0a9d64
+        padding-left: 30px;
+        padding:20px;
+      }
+
+      #sub-head-div{
+      	width:100%;
+        height:50px;
+        line-height:50px;
+        vertical-align:middle;
+        background-color:#0a9d64;
+        color:#ffffff;
+        padding-left: 30px;
+        position:fixed;
+        top:0px;
+        display: none;
+      }
+
+      #headtitle{
+		font-size:20px;
+      }
+      #headcontent{
+      	padding:10px;
+      	border-bottom: solid #ffffff 3px;
+      	padding-right:100px;
+      	margin-left: 20px;
       }
       
       #main-div{
@@ -49,6 +73,23 @@
         padding:30px;
         transition:all linear 0.2s;
       }
+      li.mblog .artical_title{
+      	font-size: 18px;
+      	padding-right:10px;
+      	margin-right:10px;
+      	border-right: solid #cccccc 2px;
+      }
+      li.mblog .artical_pre_content{
+      	font-size: 16px;
+      	padding-right:10px;
+      	margin-right:10px;
+      	border-right: solid #cccccc 2px;
+      }
+      li.mblog .artical_submittime{	
+      	position:absolute;
+      	right:20px;
+      	font-size: 14px;
+      }
       li.mblog:hover{
         -moz-box-shadow: 4px4px 8px #cccccc; /* 老的 Firefox */
         box-shadow: 4px 4px 8px #cccccc;
@@ -60,10 +101,21 @@
   </head>
   <body>
     <div id = "container">
-      <div id="head-div">ZT Blog</div>
+      <div id="head-div">
+      	<span id="headtitle">ZT Blog</span>
+      	<span id="headcontent">记录工作和生活中的各种技能、心情、感想</span>
+      </div>
+      <div id="sub-head-div">
+      	<span id="subheadtitle">ZT Blog</span>
+      </div>
+
       <div id="main-div">
         <ul class = "blog-list">
-          <li class="mblog"><span id="gotogithubpage">GitHubPages</span></li>
+          <li class="mblog"  id="gotogithubpage">
+	          <span class="artical_title">GitHubPages</span>
+	          <span class="artical_pre_content">github pages 简介</span>
+	          <span class="artical_submittime">2016年11月26日 15:12 </span>
+          </li>
           <li class="mblog">第二篇博客</li>
           <li class="mblog">第三篇博客</li>
           <li class="mblog">第四篇博客</li>
@@ -72,6 +124,7 @@
         </ul>
       </div>
       <div id="foot-div">
+
       </div>
     </div>
   </body>
@@ -79,6 +132,22 @@
   <script>
     $("#gotogithubpage").on("click",function(){
       window.location.href = "githubpage.html";
+    });
+    $(window).on("scroll", function() {
+        //console.log("浏览器高度：" + $(window).height() + ",浏览器宽度：" + $(window).width() + ",当前位置：" + $("body").scrollTop());
+        if ($("body").scrollTop() > 100) {
+        	setTimeout(function(){
+        		$("#head-div").slideUp();
+            	$("#sub-head-div").slideDown();
+        	},1000);
+            
+        } else {
+            setTimeout(function(){
+        		$("#head-div").slideDown();
+            	$("#sub-head-div").slideUp();
+        	},1000);
+        }
+
     });
   </script>
 </html>
