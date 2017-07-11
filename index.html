@@ -81,7 +81,6 @@
 		.linediv{float:left;}
 		.time{width:20%;}
 		.timeline{
-			margin-top:10px;
 			margin-bottom:30px;
 		}
 		.timeContent{
@@ -98,15 +97,26 @@
 			display: block;
 			position: absolute;
 			top:0px;
-			left:-2.5px;
-			width:5px;
-			height:5px;
+			left:-4.1px;
+			width:8px;
+			height:8px;
 			background-color: #dddddd;
 			border-radius: 50%
 		}
 		.clear{ clear:both} 
 		.myollist{margin-left: 15px;}
 		ul>li,ol>li{margin-top:10px;margin-bottom:10px;}
+		.areaTitle{text-align: left;margin-top:30px;margin-bottom: 30px;position: relative;}
+		
+		.areaTitle::after{
+			content:"";
+			display: block;
+			position: absolute;
+			border-bottom: solid 1px #dddddd;
+			bottom: 8px;
+			left:80px;
+			width:calc(100% - 100px );
+		}
 	</style>
 </head>
 <body style="background-color:#dddddd;">
@@ -145,9 +155,9 @@
 
 			<div class="contentDiv rightContent">
 
-				<h2 class="titleFont">教育经历</h2>
+				<h2 class="titleFont areaTitle">教育经历</h2>
 				<div class="timeline">
-					<div class="linediv time">2011/9-2014/7</div>
+					<div class="linediv time"><span class="label label-primary">2011/9-2014/7</span></div>
 					<div class="linediv timeContent">
 						<strong>常州信息职业技术学院 </strong> 大专| 电子信息科学与技术
 						<div class="lead jumbotron" style="margin-top:10px;font-size:14px;">
@@ -157,9 +167,9 @@
 				</div>
 				<div class="clear"></div>
 
-				<h2 class="titleFont">工作经历</h2>
+				<h2 class="titleFont areaTitle">工作经历</h2>
 				<div class="timeline">
-					<div class="linediv time">2014/4-2017/4</div>
+					<div class="linediv time"><span class="label label-primary">2014/4-2017/4</span></div>
 					<div class="linediv timeContent">
 						<strong>常州华清科盛信息系统集成有限公司 </strong> 中级软件工程师 | 系统开发部门 
 						<div class="lead jumbotron" style="margin-top:10px;font-size:14px;">
@@ -181,7 +191,7 @@
 				</div>
 				<div class="clear"></div>
 				<div class="timeline">
-					<div class="linediv time">2017/5-2017/7</div>
+					<div class="linediv time"><span class="label label-primary">2017/5-2017/7</span></div>
 					<div class="linediv timeContent">
 						<strong>常州易龙科技有限公司 </strong> java开发工程师
 						<div class="lead jumbotron" style="margin-top:10px;font-size:14px;">
@@ -195,12 +205,12 @@
 				</div>
 				<div class="clear"></div>
 
-				<h2 class="titleFont">项目经历</h2>
+				<h2 class="titleFont areaTitle">项目经历</h2>
 				<div class="timeline">
-					<div class="linediv time">2014/8-2014/10</div>
+					<div class="linediv time"><span class="label label-primary">2014/8-2014/10</span></div>
 					<div class="linediv timeContent">
 						<strong>java项目-常州照明处仓储系统【springMVC + serverlet  mysql  bootstrap+jquery+jqgrid+select2+css+js+html】</strong><br>
-						所属公司：<span class="label label-primary"><i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;常州华清科盛信息系统集成有限公司</span>
+						所属公司：<i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;常州华清科盛信息系统集成有限公司
 						<div class="lead jumbotron" style="margin-top:10px;font-size:14px;">
 							<ul style="list-style:none;">
 								<li>
@@ -217,10 +227,10 @@
 				</div>
 				<div class="clear"></div>
 				<div class="timeline">
-					<div class="linediv time">2015/9-2015/12</div>
+					<div class="linediv time"><span class="label label-primary">2015/9-2015/12</span></div>
 					<div class="linediv timeContent">
 						<strong>java项目-自来水巡检系统web系统【springMVC + serverlet  mysql  easyui+jquery+css+js+html】</strong><br>
-						所属公司：<span class="label label-primary"><i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;常州华清科盛信息系统集成有限公司</span>
+						所属公司：<i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;常州华清科盛信息系统集成有限公司
 						<div class="lead jumbotron" style="margin-top:10px;font-size:14px;">
 							<ul style="list-style:none;">
 								<li>
@@ -236,10 +246,10 @@
 				</div>
 				<div class="clear"></div>
 				<div class="timeline">
-					<div class="linediv time">2015/8-2015/12</div>
+					<div class="linediv time"><span class="label label-primary">2015/8-2015/12</span></div>
 					<div class="linediv timeContent">
 						<strong>jandroid项目-常州自来水泵房巡检手机客户端【原生的安卓控件+glide（第三方图片框架）+okhttp3(第三方网络框架) 蓝牙socket】</strong><br>
-						所属公司：<span class="label label-primary"><i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;常州华清科盛信息系统集成有限公司</span>
+						所属公司：<i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;常州华清科盛信息系统集成有限公司
 						<div class="lead jumbotron" style="margin-top:10px;font-size:14px;">
 							<ul style="list-style:none;">
 								<li>
@@ -256,10 +266,10 @@
 				</div>
 				<div class="clear"></div>
 				<div class="timeline">
-					<div class="linediv time">2016/3-2017/4</div>
+					<div class="linediv time"><span class="label label-primary">2016/3-2017/4</span></div>
 					<div class="linediv timeContent ">
 						<strong>java项目-智能中间件【springMVC + serverlet  bootstrap+jquery+css+js+html+jqgrid】</strong><br>
-						所属公司：<span class="label label-primary"><i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;常州华清科盛信息系统集成有限公司</span>
+						所属公司：<i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;常州华清科盛信息系统集成有限公司
 						<div class="lead jumbotron" style="margin-top:10px;font-size:14px;">
 							<ul style="list-style:none;">
 								<li>
@@ -276,9 +286,46 @@
 					</div>
 				</div>
 				<div class="clear"></div>
-				
 
-				
+				<div class="timeline">
+					<div class="linediv time"><span class="label label-primary">2017/5-2017/6</span></div>
+					<div class="linediv timeContent ">
+						<strong>统一支付接口（支付宝支付+微信支付）</strong><br>
+						所属公司：<i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;常州易龙科技有限公司
+						<div class="lead jumbotron" style="margin-top:10px;font-size:14px;">
+							<ul style="list-style:none;">
+								<li>
+									<strong>项目描述</strong> 主要完成支付接口的统一调用，将大部分工作转移到接口中，第三方接入的时候只需要通过支付平台提供的的一个相关id就可以进行支付接口的调用
+								</li>
+								<li>
+								<strong>责任描述</strong> 独自完成支付接口的开发以及相关文档的编写
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+
+				<div class="timeline">
+					<div class="linediv time"><span class="label label-primary">2017/6-2017/7</span></div>
+					<div class="linediv timeContent ">
+						<strong>江苏省技能大赛考试系统</strong><br>
+						所属公司：<i class="fa fa-id-card" aria-hidden="true"></i>&nbsp;常州易龙科技有限公司
+						<div class="lead jumbotron" style="margin-top:10px;font-size:14px;">
+							<ul style="list-style:none;">
+								<li>
+									<strong>项目描述</strong> 主要实现学生在线考试和对个人成绩的分析，老师在线出题查看学生做题情况，和成绩分析。学生可以进行闯关，检验自己知识掌握的情况
+									可以对自己的错题进行强化，主键减少错题巩固知识，还可以进行模拟考试对自己总体的水平进行一个评测；老师可以在线出题，制作试卷，可以查看自己学生的练习和考试情况，
+									查看所有学生的考试排行榜等功能；
+								</li>
+								<li>
+								<strong>责任描述</strong> 独自完成学生模块的所有功能（部分后台与所有前台页面），包括首页展示，顺序闯关，错题强化，专项练习，教师导习，模拟考试，我的收藏和排行榜
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
 
 			</div>
 		</div>
