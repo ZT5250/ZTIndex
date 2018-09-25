@@ -1,6 +1,5 @@
 # ZTIndex
 my personal blog,just record some things
-# 简历-张涛
 
 
 > # 联系方式
