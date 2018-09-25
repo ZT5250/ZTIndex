@@ -1,6 +1,3 @@
-# ZTIndex
-my personal blog,just record some things
-
 
 > # 联系方式
 
