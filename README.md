@@ -13,9 +13,6 @@
  - 专科/常州信息职业技术学院 
  - 工作年限：4年
  - Github：[https://github.com/ZT5250](https://github.com/ZT5250)
- - 期望职位：java高级程序员
- - 期望薪资：税前月薪16k~20k
- - 期望城市：上海
  
 ---
 
